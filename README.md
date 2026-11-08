@@ -4,7 +4,7 @@ A from-scratch quadcopter flight controller built on an ESP32. It estimates the 
 
 > **Simulation only.** The project runs entirely in the [Wokwi](https://wokwi.com) simulator. Wokwi does not model flight physics, so the "drone" does not actually fly. Sensor values are set with sliders, and the four motor outputs are shown as LED brightness (PWM). The project demonstrates the control logic, not a flight.
 
-**Live simulation:** [Open in Wokwi](YOUR_WOKWI_PROJECT_LINK)
+**Live simulation:** https://wokwi.com/projects/480109103698633729
 
 ![Demo](images/demo.gif)
 
@@ -55,7 +55,8 @@ flowchart LR
 | HC-SR04 | Obstacle distance | TRIG 5, ECHO 18 |
 | NEO-6M GPS | Position for geofence | RX2 16, TX2 17 |
 
-![Wiring diagram](images/wiring.png)
+<img width="452" height="292" alt="image" src="https://github.com/user-attachments/assets/c210f758-276e-4a0e-9f83-b8727980d03d" />
+
 
 > **Real hardware note:** the HC-SR04 ECHO pin outputs 5 V, while ESP32 inputs are 3.3 V tolerant only. On a real build, put a voltage divider (for example 1 kOhm and 2 kOhm) on ECHO.
 
