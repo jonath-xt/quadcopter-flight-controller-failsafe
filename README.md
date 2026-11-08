@@ -128,33 +128,7 @@ Required library: **TinyGPSPlus**.
 | Obstacle brake | Arm, drag ultrasonic distance below 100 cm | Front motors speed up, rear motors slow down |
 | Geofence | Arm, then let the GPS position move beyond the fence radius | `!! FENCE BREACH` with distance and bearing |
 
-![Serial output](images/serial.png)
+<img width="481" height="251" alt="image" src="https://github.com/user-attachments/assets/cbac4c5a-2acd-43f4-b1e1-5a2c5abfecb0" />
 
-## Limitations
 
-- Simulation only. There is no flight physics, so PID gains are not tuned for a real airframe.
-- The geofence raises an **alert** with distance and bearing home. It does not fly the drone back automatically, which would need position control.
-- Ultrasonic sensing has a narrow beam, short range, and struggles with soft or angled surfaces. It suits slow, small drones.
-- Yaw control and altitude hold are not implemented.
 
-## Future work
-
-- Yaw control and altitude hold with a downward-facing distance sensor
-- Autonomous return-to-home using GPS position control
-- Time-of-flight or lidar sensing in place of ultrasonic
-- Real hardware build with ESCs, brushless motors and a frame
-
-## Repository structure
-
-```
-.
-├── flight_controller.ino   # main sketch
-├── diagram.json            # Wokwi circuit
-├── libraries.txt           # TinyGPSPlus
-├── images/                 # demo GIF, wiring diagram, serial screenshot
-└── README.md
-```
-
-## License
-
-MIT
