@@ -130,5 +130,8 @@ Required library: **TinyGPSPlus**.
 
 <img width="481" height="251" alt="image" src="https://github.com/user-attachments/assets/cbac4c5a-2acd-43f4-b1e1-5a2c5abfecb0" />
 
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 
